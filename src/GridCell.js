@@ -4,17 +4,17 @@ class GridCell extends Component {
   // constructor(props) {
   //   super()
   // }
-  handleClick (){
+  handleClick() {
     console.log(`Clicked on column ${this.props.x}`)
   }
-  render(){
+
+  render() {
     return(
-      <div onClick={() => handleClick()}>
+      <div className="cell" onClick={() => this.handleClick()}>
         <p>{this.props.x}, {this.props.y}</p>
       </div>
-    )
+    );
   }
-
 }
 
 export default GridCell

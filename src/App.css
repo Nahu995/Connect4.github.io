@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+
+.cell {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 25px;
+  
+}
