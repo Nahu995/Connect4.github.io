@@ -8,14 +8,16 @@ class App extends Component {
  render(){
    const cells = [];
 
-    for (var y = 5; y >0; y--){
+    for (var y = 4; y >= 0; y--){
       const row = [];
 
       for (var x = 0; x< 7; x++){
-        row.push(<GridCell key={`${x} + ${y}`} x={x} y={y} />)
+        row.push(<GridCell key={x} x={x} y={y}/>)
       }
-      cells.push( <div key={y} className="row"> {row} </div> )
+
+      cells.push( <div key={y} className="row">{row}</div> )
     }
+
     return (
       <div className="App">
         <header className="App-header">
